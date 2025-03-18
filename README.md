@@ -83,17 +83,17 @@ Desventajas:
 * Complejidad: La gestión de las conexiones circulares puede ser más compleja, y es fácil caer en bucles infinitos si no se maneja adecuadamente.
 
 ### 4. Tabla de comparación
-| Característica                  | **Lista Simple (con ROOT y TAIL)**    | **Lista Doble (con ROOT y TAIL)**        | **Lista Circular Simple (con ROOT y TAIL)** | **Lista Circular Doble (con ROOT y TAIL)** |
-|-----------------------------------|---------------------------------------|------------------------------------------|--------------------------------------------|--------------------------------------------|
-| **Dirección del recorrido**      | Unidireccional                        | Bidireccional                            | Unidireccional (circular)                  | Bidireccional (circular)                   |
-| **Acceso al nodo anterior**       | No disponible                         | Disponible                               | No disponible                              | Disponible                                 |
-| **Uso de memoria**                | Menor (solo un puntero por nodo)      | Mayor (dos punteros por nodo)            | Menor (similar a lista simple)             | Mayor (similar a lista doble)              |
-| **Insertar al final**             | O(1)                                  | O(1)                                     | O(1)                                       | O(1)                                       |
-| **Eliminar al final**             | O(1)                                  | O(1)                                     | O(1)                                       | O(1)                                       |
-| **Insertar al principio**         | O(1)                                  | O(1)                                     | O(1)                                       | O(1)                                       |
-| **Eliminar un nodo específico**   | O(n)                                  | O(1) (si tienes el puntero al nodo)     | O(n) (más difícil que la simple)          | O(1) (si tienes el puntero al nodo)        |
-| **Ventaja principal**             | Simplicidad y eficiencia al final     | Flexibilidad para recorrido bidireccional| Recorrido cíclico eficiente               | Recorrido cíclico bidireccional            |
-| **Desventaja principal**          | Menor flexibilidad en el acceso      | Mayor uso de memoria y complejidad       | Mayor complejidad para gestionar ciclos    | Mayor complejidad para gestionar ciclos    |
+| Característica                  | **Lista Simple (con ROOT y TAIL)**    | **Lista Doble (con ROOT y TAIL)**        | **Lista Circular Simple (con ROOT y TAIL)** | 
+|-----------------------------------|---------------------------------------|------------------------------------------|--------------------------------------------|
+| **Dirección del recorrido**      | Unidireccional                        | Bidireccional                            | Unidireccional (circular)                  | 
+| **Acceso al nodo anterior**       | No disponible                         | Disponible                               | No disponible                              | 
+| **Uso de memoria**                | Menor (solo un puntero por nodo)      | Mayor (dos punteros por nodo)            | Menor (similar a lista simple)             | 
+| **Insertar al final**             | O(1)                                  | O(1)                                     | O(1)                                       |
+| **Eliminar al final**             | O(1)                                  | O(1)                                     | O(1)                                       |
+| **Insertar al principio**         | O(1)                                  | O(1)                                     | O(1)                                       |
+| **Eliminar un nodo específico**   | O(n)                                  | O(1) (si tienes el puntero al nodo)     | O(n) (más difícil que la simple)          |
+| **Ventaja principal**             | Simplicidad y eficiencia al final     | Flexibilidad para recorrido bidireccional| Recorrido cíclico eficiente               |
+| **Desventaja principal**          | Menor flexibilidad en el acceso      | Mayor uso de memoria y complejidad       | Mayor complejidad para gestionar ciclos    |
 
 
 ## Operaciones Disponibles
@@ -142,23 +142,5 @@ Al seleccionar la operación "Eliminar", se te pedirá el valor del nodo que des
 ```bash
 Ingrese el valor del Nodo a eliminar:
 ```
-
-
-## Cómo Ejecutar el Proyecto
-
-1. Clonar el repositorio: Si tienes el proyecto en un repositorio de Git, clónalo en tu máquina local.
-```bash
-    git clone <url_del_repositorio>
-```
-2. Compilar y ejecutar: 
-    * Abre una terminal en la carpeta del proyecto.
-    * Ejecuta el comando para compilar el proyecto con javac:
-    ```bash
-        javac com/mycompany/*.java
-    ```
-    * Ejecuta el programa con:
-    ```bash
-        java com.mycompany.main.Main
-    ```
 
 
